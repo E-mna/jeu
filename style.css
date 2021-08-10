@@ -1,0 +1,171 @@
+ 
+body {
+  background-image: url(font.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color:#000000;
+}
+
+
+h1 {
+  color: #efecec;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 400px;
+  margin-top: 30px;
+}
+
+h2{
+  color: #efecec;
+ 
+
+
+}
+ 
+.container {
+  display: table;
+  padding-top: 80px;
+  width: 100%;
+}
+
+.content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+ 
+
+button {
+  display: inline-block;
+  padding: 6px 10px;
+  color: #000000;
+  border: 5px;
+  border-radius: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  
+}
+button:hover{
+transform: translateY(2px)
+}
+
+#rejouer{
+  display: none;
+}
+
+#nbr{
+   
+  width: 50px;
+  height: 30px; 
+  font-size: 25px; 
+  color: white;
+  text-decoration: solid;
+  display: none;
+  
+
+}
+ 
+.saisie{
+  color: white;
+  font-size: 4em;
+  letter-spacing: 10px;
+  margin-bottom: 50px;
+  
+}
+
+ 
+.lettre {
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  border: 1px dashed whitesmoke;
+  text-align: center;
+  font-size: x-large;
+  color: whitesmoke;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+ 
+
+   
+
+/* For mobile  */
+@media only screen and (max-width: 767px) {
+  body {
+    background-image: url(font.jpg);
+  }
+
+  
+.saisie{
+  font-size: 3em;
+  letter-spacing: 10px;
+  margin-bottom: 50px;
+  
+}
+}
+
+	 
+
+
+ 
+ 
+  
+
+ 
+ 
+  
+
+/*
+ 
+@media screen and (max-width: 990px) {
+ 
+div{
+  background-image: url(font.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  max-width: auto;
+  height: 30em;
+  text-align: center;
+  margin: auto;
+}
+ 
+ 
+  
+  h1 {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+  }
+}
+  @media screen and (min-width: 800px) {
+  
+      h1 {
+        font-size: 200px;
+        color: white;
+        position: absolute;
+        top: 20%;
+        left: 35%;
+      }
+
+      div{
+        background-image: url(font.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        max-width: 90%;
+        height: 210em;
+        text-align: center;
+        margin: auto;
+      }
+
+
+}
+ */ 
+  
