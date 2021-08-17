@@ -1,66 +1,100 @@
-// DE QUOI J'AI BESOIN POUR CE JEU
+//Tous les éléments ciblés dans le HTML
+let devineMot = document.getElementById("devine");
+let validationButton = document.getElementById("validation");
+ 
+ 
+
+ //  tableau  
+const mots = ["PLUIE", "NEIGE", "PLAGE", "BRUIT", "ARBRE"];
 
 
+// tirage aléatoire + stockage 
+
+let randomIndex = Math.floor(Math.random() * mots.length);
+let randomMots =mots[randomIndex];
+console.log(randomMots); 
 
 
-// Générer les mots aléatoire
-// Donner à l'utilisateur la capacité de deviner(jouer)
-// Faire deviner l'utilisateur et s'il a faux, on lui fait recommencer le jeu 
-// S'il gagne on le filicite(stop)
+ 
+ let paragraphe= document.getElementById("message"); 
+ paragraphe.innerHTML = randomMots;
+ 
 
+//
+ initGame()
 
+ 
 
-   //------------------------------------------------ 
+ function initGame() {
 
-
- window.onload=function(){
-    alert("Bienvenue dans ce jeu Mot Mystère \n\n Deviner le mot \n\n Pour se faire, vous n'aurez droit qu'à 8 essais");  
+  let motToDisplay = "";
+  
+ for(let i = 0; i < randomMots.length; i++){
+    motToDisplay = motToDisplay   + " _ ";
+ }
  }
 
 
+
  
- // 1- Un tableau de mots
- var mots = ["PLUIE", "NEIGE", "PLAGE", "BRUIT", "ARBRE"];
+ 
+//console.log(motsToDisplay)
 
-    
- // 2- Un générateur aléatoire de mots de la longueur du tableau
- const randomMots = mots[Math.floor(Math.random() * mots.length)];
- console.log(randomMots);
-
-
- // 3- Une fonction qui affiche donc un mot choisit au hasard sur mes tierts 
-const motChoisi = document.getElementById("mot");
-motChoisi.innerHTML = tableauMots[generateurMot];
-
- // 4- Une variable qui s'occupe du tentatives
-const tentativeEvent = 0;
+//motsChoisi.innerHTML = motsToDisplay ;   
+ 
+ 
 
 
 
+ 
 
-// 4- Un gestionnaire d'évènement valider
+var value, compteur, button, test, target, restart;
+value = 8;
+compteur = value;
+test= true;
+button = document.getElementsByClassName('bout')[0];
+restart = document.getElementsByClassName('restart')[0];
+target = document.getElementsByClassName('target')[0];
+
+target.innerHTML ='Tentative(s) restate(s): <b><span">'+compteur+'</span></b>';
+
+button.onclick = function(){
+if(test==true){
+  restart.style.display = 'none';
+	compteur--;
+target.innerHTML ='Tentative(s) restate(s): <b><span">'+compteur+'</span></b>';
+    if (compteur==0){
+      target.innerHTML ='Game Over';
+      restart.style.display = 'block';
+      
+      test=false;
+    }
+}
+}
+
+restart.onclick = function(){
+	test=true;
+  compteur = value;
+target.innerHTML ='Tentative(s) restate(s): <b><span">'+compteur+'</span></b>';
+  restart.style.display = 'none';
+  button.style.opacity = '1';
+}
 
 
 
 
-// Récupérer les élements du DOM
-const message = document.getElementById('message');
-const formulaire = document.getElementById('form');
-const input = document.getElementById('lettre');
-const validerBtn = document.getElementById('valider');
-const rejouerBtn = document.getElementById('rejouer');
-const text = document.getElementById('saisie');
-const nombre = document.getElementById('nbr');
-
-
+//Insérer le nombre de tentatives au texte/
+// document.getElementById("text").innerHTML += tentatives;
+  
  
   
-  
-  
  
- 
+
+  
+
+
+
  
 
 
  
-  

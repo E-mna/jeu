@@ -16,11 +16,17 @@ h1 {
   font-weight: 400px;
   margin-top: 30px;
 }
+.target{
+  color: #efecec;
+   
+  font-size: 20px;
+   
+  margin-top: 30px;
+}
 
 h2{
   color: #efecec;
  
-
 
 }
  
@@ -37,7 +43,7 @@ h2{
 }
  
 
-button {
+.bout,  .restart{
   display: inline-block;
   padding: 6px 10px;
   color: #000000;
@@ -48,27 +54,18 @@ button {
   cursor: pointer;
   
 }
-button:hover{
+.bout:hover{
 transform: translateY(2px)
 }
 
-#rejouer{
-  display: none;
-}
-
-#nbr{
+.restart{
    
-  width: 50px;
-  height: 30px; 
-  font-size: 25px; 
-  color: white;
-  text-decoration: solid;
   display: none;
-  
-
 }
+
  
-.saisie{
+ 
+.affichage{
   color: white;
   font-size: 4em;
   letter-spacing: 10px;
@@ -90,6 +87,10 @@ transform: translateY(2px)
   cursor: pointer;
 }
  
+#message{
+color: white;
+size: 400px;
+}
 
    
 
@@ -100,7 +101,7 @@ transform: translateY(2px)
   }
 
   
-.saisie{
+.affichage{
   font-size: 3em;
   letter-spacing: 10px;
   margin-bottom: 50px;
@@ -109,11 +110,6 @@ transform: translateY(2px)
 }
 
 	 
-
-
- 
- 
-  
 
  
  
