@@ -39,7 +39,6 @@ console.log(randomMots);
  
  
 //console.log(motsToDisplay)
-
 //motsChoisi.innerHTML = motsToDisplay ;   
  
  
